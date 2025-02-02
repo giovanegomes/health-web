@@ -1,9 +1,12 @@
-import { Typography } from "@mui/material"
+import { Outlet } from "react-router"
+import { Header } from "./components/Header"
 
 function App() {
-  return (<Typography variant="h1" gutterBottom>
-    h1. Heading
-  </Typography>
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
   )
 }
 
